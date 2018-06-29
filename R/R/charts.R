@@ -137,7 +137,7 @@ plot_sample_counts_by_annotationkey_2d <- function(
                                    text = "label")) +
         geom_col(aes_string(fill = names(annotation_keys[1])),
                           colour = "white", size = 0.2) +
-        scale_fill_viridis_d(annotation_keys[[1]]) +
+        scale_fill_viridis(annotation_keys[[1]]) +
         xlab("") +
         ylab(glue::glue("Number of {label}",
                                  label = sample_labels[[sample_key]])) +
